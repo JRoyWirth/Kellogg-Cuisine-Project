@@ -1,0 +1,25 @@
+h1 {    
+    color:darkslateblue;
+    font-family: Helvetica;
+    border: 0px;
+}
+h3 {
+    color:darkslateblue;
+    font-family: Helvetica;
+    border: 0px;
+}
+h4 {
+    color:darkslateblue;
+    font-family: Helvetica;
+    border: 0px;
+    text-align: right;
+}
+#log_in {
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+}
+p {
+    color: black;
+    font-family: Helvetica;
+}
