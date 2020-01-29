@@ -1,36 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Kellogg Cuisine Project</title>
-    <styles>
-        <link rel="stylesheet" href="styles.css">
-    </styles>
+  <title>Kellogg Cuisine Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<h1>The Kellogg Cuisine Project</h1>
-<!-- Kellogg oriented logo -->
-<img src="Kellogg_vertical_new.jpg" alt="Kellogg Cuisine Project" style="border:0px">
-<p>A community of Kellogg students sharing and connecting with each other and the world through homecooked meals</p>
-<br>
+<div>
 
-<!-- Future home of a custom mape of world foods -->
-<img src="World of Dumplings.jpg" alt="Map of World's food">
-<br><br>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Kellogg Cuisine Project</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="library.html" data-toggle="tooltip" title="our recipes are here! Sign up first!">Library</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+</nav>
 
-<!-- form for logging into the site -->
-<form id="log_in">
-    Username (Kellogg ID):
-    <input type="text" name="username"><br>
-    Password ("recipe"):
-    <input type="password" name="psw">
-   <br><br>
-<!-- NEED TO MAKE THIS A ACTION ATTRIBUTE SENDING USER TO HOMEPAGE OR DENIAL PAGE -->
-   <input type="Submit" name="log_in">
-   <a href="landing.html">to be tied to Submit</a> 
-</form>
+<br><br><br>
 
-
-<!-- Teaser recipe photo-->
-<h3><b>Recipe of the Month</b></h3>
-<p>Recipe: Avgolemono <br>
-Origin: Greece</p>
-<img src="Greek Flag.png" alt="Flag_of_Week" style="width:25px;height:20px"><br>
-<img src="Avgolemono.jpg" alt="Recipe_of_Week">
-
+<div class="container">
+  <h1>The Kellogg Cuisine Project</h1>
+  <p>A community of Kellogg students connecting with each other and sharing the world through homecooked meals.</p>
+  <br><br><br>      
+  <div class="row">
+    <div class="col-sm-4">
+        <img src="Kellogg_vertical_new.jpg" alt="Kellogg Cuisine Project" style="border:0px">
+    </div>
+    <div class="col-sm-4" style="background-color: lightgrey;">
+        <!-- featured recipe as a teaser -->
+        <h2><b>Recipe of the Month</b></h2>
+        <p>Recipe: Avgolemono <br>
+        Origin: Greece</p>
+        <img src="Greek Flag.png" alt="Flag_of_Week" style="width:25px;height:20px"><br>
+        <img src="Avgolemono.jpg" alt="Recipe_of_Week"> 
+    </div>
+    <div class="col-sm-4">
+        <!-- form for signing up for the site; sends information to formspree (3rd party backend site) -->
+        <h3>Sign Up!</h3>
+        <form action="https://formspree.io/xqkprgbk" method="POST">
+            <div class="form-group">
+                <p>Full Name:</p><input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <p>Email Address:</p><input type="email" name="_replyto">
+            </div>
+            <div class="form-group">
+              <p>Favorite food:</p><input type="text" name="food">
+          </div>
+            <!-- includes a tooltip! -->
+            <input type="submit" value="Send" data-toggle="tooltip" title="thank you for joining us!">
+        </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

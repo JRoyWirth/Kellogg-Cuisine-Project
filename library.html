@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KCP Library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+<!-- creates the navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Kellogg Cuisine Project</a>
+      </div>
+      <!-- creates a nav bar location for each page of the website-->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+</nav>
+
+<br> <br>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="North America Map.jpg" alt="North_America" style="width:1500px">
+        <div class="carousel-caption">
+          <h2>North American Food</h2>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="Carribean.jpg" alt="Carribean" style="width:1500px">
+        <div class="carousel-caption">
+          <h2>Carribean Food</h2>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="Europe.jpg" alt="Europe" style="width:1500px">
+        <div class="carousel-caption">
+          <h2>European Food</h2>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+<br> <br>
+
+
+<!-- bootstrap container structure -->
+<div class="container-fluid">
+    <h1>Recipe Library</h1>
+    <div class="row">
+        <div class="col-sm-12" style="background-color: white;">
+            <!--creates a striped table using bootstrap-->
+            <table class="table table-striped">
+                <!-- table headers--> 
+                <thead>
+                  <tr>
+                    <th>Recipe</th>
+                    <th>Meal</th>
+                    <th>Country of Origin</th>
+                    <th>Member</th>
+                    <th class="dietary">Dietary</th>
+                  </tr>
+                </thead>
+                <!--body of the table with each recipe available-->
+                <tbody>
+                  <tr>
+                    <td>Coq au Vin</td>
+                    <td>Main Course</td>
+                    <td>France</td>
+                    <td>Jason Wirth</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Avgolemono</td>
+                    <td>Main Course</td>
+                    <td>Greece</td>
+                    <td>Jason Wirth</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Ribs (Sous Vide)</td>
+                    <td>Main Course</td>
+                    <td>United States (Southeast)</td>
+                    <td>Jason Wirth</td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td>Hummus</td>
+                    <td>App</td>
+                    <td>Israel</td>
+                    <td>Jason Wirth</td>
+                    <td><p>Vegetarian Friendly</p></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <!-- new row of the container below the table above; contains the "featured recipes"-->
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Recipe: Avgolemono <br>
+                Origin: Greece</p>
+                <img src="Greek Flag.png" alt="Flag_of_Week" style="width:50px;height:40px"><br>
+                <img src="Avgolemono.jpg" class="img-circle" alt="Recipe_of_Week" style="width:225px;height:275px">
+        </div>
+        <div class="col-sm-3">
+            <p>Recipe: Coq au Vin <br>
+                Origin: France</p>
+                <img src="French Flag.PNG" alt="Flag_of_Week_2" style="width:50px;height:40px"><br>
+                <img src="Coq au Vin.PNG" class="img-circle" alt="Recipe_of_Week_2" style="width:225px;height:275px">
+        </div>
+        <div class="col-sm-3">
+            <p>Recipe: Hummus <br>
+                Origin: Israel</p>
+                <img src="Israel Flag.PNG" alt="Flag_of_Week_3" style="width:50px;height:40px"><br>
+                <img src="Hummus.PNG" class="img-circle" alt="Recipe_of_Week_3" style="width:225px;height:275px">
+        </div>
+        <!-- button to send people to recipes outside of the website -->
+        <div class="col-sm-3">
+            <a href="https://www.seriouseats.com/recipes" class="btn btn-default" data-toggle="tooltip" title="...leaving Kellogg Cuisine Project..." role="button">Make a random recipe from Serious Eats!</a>
+        </div>
+    </div>    
+</div>
+
+
+</body>
